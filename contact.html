@@ -9,67 +9,103 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <section class="container py-5">
-        <h2 class="text-center mb-4 text-info mb-5">Contact Me</h2>
-        <div class="row">
-            <!--Contact Info-->
-            <div class="col-md-4 mb-5">
-                <h5 class="lead text-info">Get In Touch</h5>
-                <p><strong class="text-secondary">Email: </strong>me@example.com</p>
-                <p><strong class="text-secondary">Phone: </strong> +221 77 000 0000</p>
-                <p><strong class="text-secondary">Location: </strong> Saint-Louis, Sénégal</p>
-                <div>
-                    <a href="#" class="me-2"><i class="bi bi-twitter text-info"></i></a>
-                    <a href="#" class="me-2"><i class="bi bi-linkedin text-info"></i></a>
-                    <a href="#" class="me-2"><i class="bi bi-github text-info"></i></a>
-                    <a href="#"><i class="bi bi-discord text-info"></i></a>
-                </div>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a>
+                    <img class=" w-50" src="assets/images/logo.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
 
-                 <!--Map Section-->
-        <div class="mt-5" style="width: 300px;" >
-            <h5 class="text-secondary">My Location</h5>
-                <div class="ratio ratio-16x9">
-                    <iframe
-                    src="https://www.google.com/maps?q=Ndioum,+Saint-Louis,+Senegal&output=embed" 
-                    width="200"
-                    height="200"
-                    style="border:0;"
-                    allowfullscreen=""
-                    loading="lazy"
-                    >
-                    </iframe>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto lead">
+                        <li class="nav-item ">
+                            <a class="nav-link text-info active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-info" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-info" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-info" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
 
                 </div>
 
             </div>
+
+          </nav>
+    </header>
+
+    <main>
+        <section class="container py-5">
+            <h2 class="text-center mb-4 text-info mb-5">Contact Me</h2>
+            <div class="row">
+                <!--Contact Info-->
+                <div class="col-md-4 mb-5">
+                    <h5 class="lead text-info">Get In Touch</h5>
+                    <p><strong class="text-secondary">Email: </strong>me@example.com</p>
+                    <p><strong class="text-secondary">Phone: </strong> +221 77 000 0000</p>
+                    <p><strong class="text-secondary">Location: </strong> Saint-Louis, Sénégal</p>
+                    <div>
+                        <a href="#" class="me-2"><i class="bi bi-twitter text-info"></i></a>
+                        <a href="#" class="me-2"><i class="bi bi-linkedin text-info"></i></a>
+                        <a href="#" class="me-2"><i class="bi bi-github text-info"></i></a>
+                        <a href="#"><i class="bi bi-discord text-info"></i></a>
+                    </div>
+
+                    <!--Map Section-->
+            <div class="mt-5" style="width: 300px;" >
+                <h5 class="text-secondary">My Location</h5>
+                    <div class="ratio ratio-16x9">
+                        <iframe
+                        src="https://www.google.com/maps?q=Ndioum,+Saint-Louis,+Senegal&output=embed" 
+                        width="200"
+                        height="200"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        >
+                        </iframe>
+
+                    </div>
+
+                </div>
+                </div>
+
+                <!--Contact Form-->
+                <div class="col-md-8">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="location" class="form-label">Your Location (optional)</label>
+                            <input type="text" name="location" class="form-control" id="location" placeholder="City, Country">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Your message</label>
+                            <textarea id="message" rows="5" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-info">Send Message                    </button>
+                    </form>
+                </div>
             </div>
 
-             <!--Contact Form-->
-            <div class="col-md-8">
-                <form>
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Your Name</label>
-                        <input type="text" id="name" class="form-control" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Your Email</label>
-                        <input type="email" id="email" class="form-control" required>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="location" class="form-label">Your Location (optional)</label>
-                        <input type="text" name="location" class="form-control" id="location" placeholder="City, Country">
-                    </div>
-                    <div class="mb-3">
-                        <label for="message" class="form-label">Your message</label>
-                        <textarea id="message" rows="5" class="form-control" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-info">Send Message                    </button>
-                </form>
-            </div>
-        </div>
-
-       
-    </section>
-
+        
+        </section>
+    </main>
+    
 </body>
 </html>
